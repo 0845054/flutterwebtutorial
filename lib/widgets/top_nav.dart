@@ -28,7 +28,7 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) => A
             visible: !ResponsiveWidget.isSmallScreen(context),
             child: CustomText(
               text: "Dash",
-              color: Constanst.lightGrey,
+              color: Constants.lightGrey,
               size: 20,
               weight: FontWeight.bold,
             ),
@@ -37,14 +37,14 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) => A
           IconButton(
             onPressed: () {},
             icon: Icon(Icons.settings),
-            color: Constanst.dark.withOpacity(0.7),
+            color: Constants.dark.withOpacity(0.7),
           ),
           Stack(
             children: [
               IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.notifications),
-                color: Constanst.dark.withOpacity(0.7),
+                color: Constants.dark.withOpacity(0.7),
               ),
               Positioned(
                 top: 7,
@@ -54,9 +54,9 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) => A
                   height: 12,
                   padding: EdgeInsets.all(4),
                   decoration: BoxDecoration(
-                    color: Constanst.active,
+                    color: Constants.active,
                     borderRadius: BorderRadius.circular(30),
-                    border: Border.all(color: Constanst.light, width: 2),
+                    border: Border.all(color: Constants.light, width: 2),
                   ),
                 ),
               )
@@ -65,14 +65,14 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) => A
           Container(
             width: 1,
             height: 22,
-            color: Constanst.lightGrey,
+            color: Constants.lightGrey,
           ),
           SizedBox(
             width: 16,
           ),
           CustomText(
             text: "Santos Enoque",
-            color: Constanst.lightGrey,
+            color: Constants.lightGrey,
           ),
           SizedBox(
             width: 16,
@@ -83,15 +83,15 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) => A
               borderRadius: BorderRadius.circular(30),
             ),
             child: CircleAvatar(
-              backgroundColor: Constanst.light,
+              backgroundColor: Constants.light,
               child: Icon(
                 Icons.person_outline,
-                color: Constanst.dark,
+                color: Constants.dark,
               ),
             ),
           )
         ],
       ),
-      iconTheme: IconThemeData(color: Constanst.dark),
+      iconTheme: IconThemeData(color: Constants.dark),
       backgroundColor: Colors.transparent,
     );

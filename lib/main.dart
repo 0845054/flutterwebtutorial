@@ -1,12 +1,13 @@
 // https://www.youtube.com/watch?v=i6gFRSnE6Ro&list=PLaP9FQ89vSfGE2hOt029nHDRokEEVwHUW&index=1&t=600s
 
 import 'package:flutter/material.dart';
+import 'package:flutterwebtutorial/controllers/menu_controller.dart';
 import 'package:flutterwebtutorial/layouts.dart';
-import 'package:flutterwebtutorial/screens/home.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  Get.put(MenuController());
   runApp(MyApp());
 }
 

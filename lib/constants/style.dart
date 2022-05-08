@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Constanst {
+class Constants {
   static Color light = Color(0xFFF7F8FC);
   static Color lightGrey = Color(0xFFA4A6b3);
   static Color dark = Color(0xFF363740);
